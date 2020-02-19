@@ -17,12 +17,15 @@
                 <span class="navbar-text mb-0 h2">
                     A rain forecast blog
                 </span>
-                <div class="col-md-4">
-                    <a class="btn btn-secondary" href="index.html"
+                <div class="col-md-6">
+                    <a class="btn btn-secondary" href="{{ url_for("main.index") }}"
                       role="button">Go to Home page
                     </a>
-                    <a class="btn btn-secondary" href="signup"
+                    <a class="btn btn-secondary" href="{{ url_for("main.signup") }}"
                       role="button">Go to Sign up page
+                    </a>
+                    <a class="btn btn-secondary" href="{{ url_for("main.users") }}"
+                      role="button">Registered Users
                     </a>
                 </div>
             </nav>
